@@ -1,80 +1,187 @@
-# Data_Professional_Survey_Visualization_PowerBI
+# 📊 Data Professionals Survey — Market Research Dashboard (Power BI)
 
-## 📊 Project Overview
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-yellow?style=flat-square)
+![Data Viz](https://img.shields.io/badge/data%20viz-Survey%20analytics-green?style=flat-square)
 
-This project presents a comprehensive analysis of survey data collected from 630 data professionals worldwide. The analysis explores key insights into the data industry, including salary trends, job satisfaction, programming language preferences, career entry barriers, and geographic distribution of professionals. The project demonstrates end-to-end data transformation and visualization capabilities using Power BI, transforming raw survey data into actionable business intelligence.
+> Survey analysis of 630 data professionals worldwide—salary trends, job satisfaction, programming preferences, and career entry barriers—visualized in Power BI.
 
-## 🎯 Project Objectives
+[Overview](#-overview) · [Dashboards](#-dashboards) · [Project Structure](#-project-structure) · [Getting Started](#-getting-started) · [Documentation](#-documentation)
 
-- **Analyze Industry Demographics**: Understand the composition of the data professional community, including age distribution and geographic spread
-- **Evaluate Compensation Trends**: Identify salary patterns across different job titles and roles within the data field
-- **Assess Job Satisfaction**: Measure happiness levels regarding work/life balance and salary across the industry
-- **Identify Skill Preferences**: Determine the most popular programming languages and tools used by data professionals
-- **Understand Career Barriers**: Analyze perceptions about the difficulty of entering the data field
-- **Create Interactive Dashboards**: Develop professional visualizations that enable stakeholders to explore insights dynamically
+---
 
-## 🛠️ Tools & Technologies
+## 📋 Overview
 
-- **Microsoft Power BI Desktop**: Primary tool for data transformation, modeling, and visualization
-- **Power Query (M Language)**: Data cleaning, transformation, and preparation
-- **DAX (Data Analysis Expressions)**: Calculated measures and advanced analytics
-- **Data Modeling**: Creating relationships and optimized data models
+### 🎯 Problem Statement
 
-## 📈 Key Insights & Findings
+> HR and talent teams need data-driven insights into the data professional market—compensation, satisfaction, skills, and perceived career barriers. Survey data is often trapped in spreadsheets, hard to explore.
 
-### Demographics
-- **Total Survey Respondents**: 630 data professionals
-- **Average Age**: 29.87 years
-- **Geographic Distribution**: United States leads with the highest participation, followed by India, United Kingdom, and Canada
+### 💡 Solution
 
-### Compensation Analysis
-- **Highest Average Salary**: Data Scientists ($95K+)
-- **Second Tier**: Data Engineers and Data Architects ($65-70K)
-- **Mid-Range**: Data Analysts and Other roles ($55-60K)
-- **Entry Level**: Database Developers and Students ($25-35K)
+A **Power BI dashboard** that:
 
-### Job Satisfaction Metrics
-- **Work/Life Balance Happiness**: 5.74/10 (moderate satisfaction)
-- **Salary Happiness**: 4.27/10 (below average satisfaction)
-- Indicates potential areas for industry improvement in compensation structures
+- Analyzes survey responses from 630 data professionals worldwide
+- Visualizes salary, job satisfaction, programming language preferences, and career entry perceptions
+- Uses **Power Query** (M), **DAX**, and **data modeling** for transformation and analytics
+- Provides interactive filters and drill-down for stakeholders
 
-### Technical Skills
-- **Most Popular Language**: Python (overwhelmingly preferred, 400+ votes)
-- **Secondary Languages**: R and Other languages (approximately 100 votes each)
-- **Less Common**: C/C++, JavaScript, and Java (minimal adoption)
+### ✨ Key Features
 
-### Career Entry Analysis
-- **Perceived Difficulty**:
-  - 42.7% find it "Neither easy nor difficult"
-  - 24.76% consider it "Difficult"
-  - 21.2% find it "Easy"
-  - 6.98% find it "Very Difficult"
-- Suggests the field is accessible but requires dedication
+| Feature | Description |
+|---------|-------------|
+| 💰 **Compensation analysis** | Salary by job title; Data Scientists $95K+, Engineers $65–70K, Analysts $55–60K |
+| 😊 **Job satisfaction** | Work/life balance (5.74/10), salary happiness (4.27/10) gauges |
+| 🐍 **Programming preferences** | Python dominant (400+ votes); R, C/C++, JS, Java breakdown |
+| 🚧 **Career barriers** | "Easy" vs "Difficult" to break in; distribution by perception |
+| 🌍 **Demographics** | 630 respondents, avg age 29.87; geographic distribution (US, India, UK, Canada) |
+| 📊 **Interactive visuals** | Cards, gauges, bar charts, donut chart, treemap |
 
-## 📊 Dashboard Features
+### 👥 Target Audience
 
-The interactive Power BI dashboard includes:
+- **Recruiters** — Evidence of Power BI, DAX, survey analytics
+- **HR / talent** — Compensation and satisfaction benchmarks
+- **Data professionals** — Industry insights and career context
 
-1. **Key Metrics Cards**
-   - Total survey participants
-   - Average age of respondents
+---
 
-2. **Happiness Gauges**
-   - Work/life balance satisfaction (semi-circular gauge)
-   - Salary satisfaction (semi-circular gauge)
+## 📊 Dashboards
 
-3. **Average Salary by Job Title**
-   - Horizontal bar chart comparing compensation across roles
-   - Visual hierarchy showing career progression opportunities
+### 🖼️ Dashboard Preview
 
-4. **Favorite Programming Language**
-   - Stacked bar chart showing language preferences
-   - Breakdown by job title for deeper insights
+![Data Professionals Survey Dashboard](assets/images/data_professionals_survey_dashboard.png)
 
-5. **Difficulty to Break Into Data**
-   - Donut chart displaying perceived entry barriers
-   - Percentage distribution of responses
+### 📈 Key Visualizations
 
-6. **Country Distribution**
-   - Treemap visualization showing geographic spread
-   - Highlights global participation and market presence
+| Visual | Purpose |
+|--------|---------|
+| **KPI cards** | Total participants, average age |
+| **Happiness gauges** | Work/life balance, salary satisfaction (0–10) |
+| **Salary by job title** | Horizontal bar chart; compensation across roles |
+| **Favorite programming language** | Stacked bar; Python, R, C/C++, JS, Java |
+| **Difficulty to break into data** | Donut chart; Easy / Difficult / Neutral |
+| **Country distribution** | Treemap; geographic spread of respondents |
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| **Visualization** | Microsoft Power BI Desktop |
+| **ETL / Transform** | Power Query (M Language) |
+| **Calculations** | DAX (Data Analysis Expressions) |
+| **Data modeling** | Relationships, star schema principles |
+| **Data format** | CSV |
+
+### 🔧 Tools & Techniques
+
+- **Power Query** — Data cleaning, reshaping, preparation
+- **DAX** — Calculated measures, aggregations
+- **Data modeling** — Table relationships, optimized model
+
+---
+
+## 📁 Project Structure
+
+```
+market-research-analytics-visualization-powerbi/
+├── data/
+│   └── raw/
+│       └── data_professionals_survey.csv
+├── assets/
+│   ├── powerbi/
+│   │   └── data_professional_survey_dashboard.pbix
+│   └── images/
+│       └── data_professionals_survey_dashboard.png
+├── README.md
+└── .gitignore
+```
+
+### 📂 Folder Descriptions
+
+| Folder | Purpose |
+|--------|---------|
+| `data/raw/` | Survey dataset (630 data professionals) |
+| `assets/powerbi/` | Power BI report (.pbix) |
+| `assets/images/` | Dashboard preview image |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Power BI Desktop** (free)
+- Data file: `data/raw/data_professionals_survey.csv`
+
+### Quick Start
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/Konstant-gk/market-research-analytics-visualization-powerbi.git
+   cd market-research-analytics-visualization-powerbi
+   ```
+
+2. **Open the report**
+   - Open `assets/powerbi/data_professional_survey_dashboard.pbix` in Power BI Desktop
+   - If prompted, point the data source to `data/raw/data_professionals_survey.csv`
+
+3. **Refresh data** (optional)
+   - Home → Transform data → Close & Apply, or refresh from report view
+
+---
+
+## 📈 Key Insights
+
+| Insight | Value |
+|---------|-------|
+| **Total respondents** | 630 data professionals |
+| **Average age** | 29.87 years |
+| **Top countries** | US, India, UK, Canada |
+| **Highest salary** | Data Scientists ($95K+) |
+| **Work/life happiness** | 5.74/10 |
+| **Salary happiness** | 4.27/10 |
+| **Most popular language** | Python (400+ votes) |
+| **Career entry** | 42.7% "Neither easy nor difficult"; 24.76% "Difficult"; 21.2% "Easy" |
+
+---
+
+## 📚 Documentation
+
+| Resource | Description |
+|----------|-------------|
+| [assets/images/](assets/images/) | Dashboard preview |
+| [assets/powerbi/](assets/powerbi/) | Power BI report |
+
+---
+
+## ✅ What This Project Demonstrates
+
+| Competency | How It's Shown |
+|------------|----------------|
+| **Power BI** | Reports, visuals, DAX, Power Query |
+| **Survey analytics** | Demographics, compensation, satisfaction, skills |
+| **Data modeling** | Relationships, measures |
+| **Professional structure** | `data/`, `assets/` layout; clear README |
+| **Portfolio readiness** | Scannable, recruiter-friendly docs |
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a branch (`feat/`, `fix/`, `docs/`)
+3. Open a Pull Request
+
+---
+
+## 📄 License
+
+MIT — see [LICENSE](LICENSE) if present.
+
+---
+
+## 📬 Contact
+
+- **Repository:** [Konstant-gk/market-research-analytics-visualization-powerbi](https://github.com/Konstant-gk/market-research-analytics-visualization-powerbi)
+- **Issues:** [GitHub Issues](https://github.com/Konstant-gk/market-research-analytics-visualization-powerbi/issues)
